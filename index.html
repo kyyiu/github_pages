@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      height: 100px;
+      background-color: purple;
+    }
+  </style>
+</head>
+<body>
+  
+  <div>123</div>
+  <script>
+    // document.oncontextmenu = function(e) { e.preventDefault(); return}
+    const dom = document.querySelector('div')
+    dom.addEventListener('contextmenu', tt, false)
+    function tt(e) {
+      console.log("WW", e)
+      dom.style.backgroundColor = 'green'
+      e.preventDefault()
+      return false
+    }
+  </script>
+</body>
+</html>
